@@ -1,0 +1,1 @@
+ffmpeg-normalize ../data/faded/*.wav -ext wav -f --sample-rate 48000 --keep-lra-above-loudness-range-target -p -of ../data/normalized/

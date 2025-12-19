@@ -1,0 +1,10 @@
+[
+    {
+        "A": "audio/P1-VA-E1.0.wav",
+        "B": "audio/P1-VB-E1.0.wav",
+        "X": [
+            "audio/P2-VA-E1.0.wav",
+            "audio/P2-VB-E1.0.wav"
+        ]
+    }
+]

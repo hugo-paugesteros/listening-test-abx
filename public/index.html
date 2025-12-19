@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Audio Listening Test">
+    <title>Listening Test</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <ol id="steps">
+            <li class="step-intro active"></li>
+            <li class="step-outro"></li>
+        </ol>
+        <div id="progress" style="--progress: 0;"></div>
+    </header>
+
+    <form>
+        <section class="form-step">
+            <h1>Listening test :</h1>
+            <p>Thank you for taking part in this listening test!</p>
+            <p>You can edit the instructions in the file <kbd>index.html</kbd></p>
+        </section>
+        <section class="form-step">
+            <div id="conclu"><button>Save</button></div>
+            <p>Click Save, confirm, then name your JSON file.</p>
+        </section>
+    </form>
+
+    <footer>
+        <button type="button" id="prev" aria-label="Previous Step">‹</button>
+        <button type="button" id="next" aria-label="Next Step">›</button>
+    </footer>
+
+    <script src="js/abx.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
