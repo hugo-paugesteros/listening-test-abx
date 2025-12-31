@@ -3,8 +3,16 @@
         "A": "audio/P1-VA-E1.0.wav",
         "B": "audio/P1-VB-E1.0.wav",
         "X": [
-            "audio/P2-VA-E1.0.wav",
+            "audio/P2-VA-E1.1.wav",
             "audio/P2-VB-E1.0.wav"
+        ]
+    },
+    {
+        "A": "audio/P1-VA-E2.0.wav",
+        "B": "audio/P1-VB-E2.0.wav",
+        "X": [
+            "audio/P2-VA-E2.1.wav",
+            "audio/P2-VB-E2.0.wav"
         ]
     },
     {
@@ -32,7 +40,7 @@
         ]
     },
     {
-        "A": "audio/P2-VA-E1.0.wav",
+        "A": "audio/P2-VA-E1.1.wav",
         "B": "audio/P2-VB-E1.0.wav",
         "X": [
             "audio/P2-VA-E1'.0.wav",
@@ -59,8 +67,16 @@
         "A": "audio/P1-VA-E1.0.wav",
         "B": "audio/P1-VC-E1.0.wav",
         "X": [
-            "audio/P2-VA-E1.0.wav",
+            "audio/P2-VA-E1.1.wav",
             "audio/P2-VC-E1.0.wav"
+        ]
+    },
+    {
+        "A": "audio/P1-VA-E2.0.wav",
+        "B": "audio/P1-VC-E2.0.wav",
+        "X": [
+            "audio/P2-VA-E2.1.wav",
+            "audio/P2-VC-E2.0.wav"
         ]
     },
     {
@@ -81,18 +97,18 @@
     },
     {
         "A": "audio/P1-VA-E1.0.wav",
-        "B": "audio/P1-VC-E1.0.wav",
+        "B": "audio/P1-VC-E1.1.wav",
         "X": [
             "audio/P1-VA-E1'.0.wav",
             "audio/P1-VC-E1'.0.wav"
         ]
     },
     {
-        "A": "audio/P2-VA-E1.0.wav",
+        "A": "audio/P2-VA-E1.1.wav",
         "B": "audio/P2-VC-E1.0.wav",
         "X": [
             "audio/P2-VA-E1'.0.wav",
-            "audio/P1-VC-E1'.0.wav"
+            "audio/P2-VC-E1'.0.wav"
         ]
     },
     {
@@ -109,6 +125,38 @@
         "X": [
             "audio/P1-VA-E3.0.wav",
             "audio/P1-VC-E3.0.wav"
+        ]
+    },
+    {
+        "A": "audio/P1-VA-E2.0.wav",
+        "B": "audio/P1-VB-E2.0.wav",
+        "X": [
+            "audio/S-VA-E2-HV1.wav",
+            "audio/S-VB-E2-HV1.wav"
+        ]
+    },
+    {
+        "A": "audio/P2-VA-E2.0.wav",
+        "B": "audio/P2-VB-E2.0.wav",
+        "X": [
+            "audio/S-VA-E2-HV1.wav",
+            "audio/S-VB-E2-HV1.wav"
+        ]
+    },
+    {
+        "A": "audio/P1-VA-E2.0.wav",
+        "B": "audio/P1-VC-E2.0.wav",
+        "X": [
+            "audio/S-VA-E2-HV1.wav",
+            "audio/S-VC-E2-HV1.wav"
+        ]
+    },
+    {
+        "A": "audio/P2-VA-E2.0.wav",
+        "B": "audio/P2-VC-E2.0.wav",
+        "X": [
+            "audio/S-VA-E2-HV1.wav",
+            "audio/S-VC-E2-HV1.wav"
         ]
     }
 ]
