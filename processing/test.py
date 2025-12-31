@@ -32,10 +32,10 @@ with open("test.csv") as csvfile:
             else:
                 stimulis.add(stimuli)
 
-if not os.path.exists("data/raw"):
-    os.makedirs("data/raw")
-if not os.path.exists("data/auto-cut"):
-    os.makedirs("data/auto-cut")
+if not os.path.exists("../data/raw"):
+    os.makedirs("../data/raw")
+if not os.path.exists("../data/auto-cut"):
+    os.makedirs("../data/auto-cut")
 dataset = pd.read_pickle(
     "/home/hugo/Thèse/identification/data/processed/dataset_cnsm.pkl"
 )
