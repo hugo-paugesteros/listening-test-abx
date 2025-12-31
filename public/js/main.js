@@ -67,6 +67,7 @@ function renderTest(rounds) {
 
         // Add form step
         const stepSection = document.createElement('section')
+        stepSection.id = `round-${i}`
         stepSection.classList.add('form-step')
         stepSection.innerHTML = `
         <x-abx
@@ -78,6 +79,19 @@ function renderTest(rounds) {
         `
         formContainer.insertBefore(stepSection, formContainer.lastElementChild)
     })
+
+    const half = Math.ceil(rounds.length / 2)
+    const half_elem = formContainer.querySelector(`#round-${half}`)
+    const stepLi = document.createElement('li')
+    stepsContainer.insertBefore(stepLi, stepsContainer.lastElementChild)
+
+    const stepSection = document.createElement('section')
+    stepSection.classList.add('form-step')
+    stepSection.innerHTML = `
+    <h1>Pause</h1>
+    <p>Prenez une pause de 5 minutes !</p>
+    `
+    formContainer.insertBefore(stepSection, half_elem)
 
     updatePage(currentPage)
 }
