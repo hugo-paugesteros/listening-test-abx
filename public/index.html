@@ -24,6 +24,25 @@
             <h1>Listening test :</h1>
             <p>Thank you for taking part in this listening test!</p>
             <p>You can edit the instructions in the file <kbd>index.html</kbd></p>
+
+            <label for="">Quel âge avez-vous ?
+                <input type="number" id="age-input" min="10" max="100">
+            </label>
+
+            <fieldset>
+                <legend>Êtes-vous musicien⋅e ?</legend>
+                <div>
+                    <input type="radio" id="isMusician1" name="isMusician" value="yes" />
+                    <label for="isMusician1">Oui</label>
+
+                    <input type="radio" id="isMusician2" name="isMusician" value="no" />
+                    <label for="isMusician2">Non</label>
+                </div>
+            </fieldset>
+
+            <label for="">Si oui, de quel instrument jouez-vous ?
+                <input type="text" id="instrument-input">
+            </label>
         </section>
         <section class="form-step">
             <div id="conclu"><button>Save</button></div>

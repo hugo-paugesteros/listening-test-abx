@@ -131,7 +131,7 @@ function updatePage(pageIndex) {
 
     // Update prev/next buttons
     prevBtn.disabled = (pageIndex === 1)
-    validateCurrentStep()
+    // validateCurrentStep()
 
     Array.from(stepsContainer.children).forEach((li, idx) => {
         if (idx + 1 === pageIndex) li.classList.add('active')
@@ -183,6 +183,12 @@ const saveBtn = document.querySelector('#conclu button')
 saveBtn.addEventListener('click', (e) => {
     e.preventDefault()
 
+    const infos = {
+        age: document.querySelector('#age-input').value,
+        isMusician: document.querySelector('input[type="radio"][name="isMusician"]:checked').value,
+        instrument: document.querySelector('#instrument-input').value,
+    }
+
     let results = []
     document.querySelectorAll('x-abx').forEach((test, i) => {
         results.push({
@@ -190,7 +196,11 @@ saveBtn.addEventListener('click', (e) => {
             result: test.getResults()
         })
     })
-    const json = JSON.stringify(results, null, 2)
+    const data = {
+        infos: infos,
+        results: results
+    }
+    const json = JSON.stringify(data, null, 2)
     const blob = new Blob([json], { type: "application/json" })
     console.log(json)
 
