@@ -104,6 +104,7 @@ form {
     .form-step {
         --radius: max(8vw, 8vh);
         width: 100%;
+        padding: 5%;
         position: absolute;
         top: 0;
         height: 100%;

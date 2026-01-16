@@ -28,18 +28,21 @@ class ABX extends HTMLElement {
 
     render() {
         this.shadow.innerHTML = `
-    <button>A<audio src="${this.getAttribute('a')}" preload="auto"></audio></button>
+    <p>Which violin is X?</p>
+    <div id="controls">
+        <button>A<audio src="${this.getAttribute('a')}" preload="auto"></audio></button>
 
-    <span></span>
-    
-    <button>B<audio src="${this.getAttribute('b')}" preload="auto"></audio></button>
-    
-    
-    <input type="radio" id="choiceA-${this.uniqueId}" name="choice-${this.id}" value="A" />
-    <label for="choiceA-${this.uniqueId}">X is A</label>
-    <button>X<audio src="${this.getAttribute('x')}" preload="auto"></audio></button>
-    <input type="radio" id="choiceB-${this.uniqueId}" name="choice-${this.id}" value="B" />
-    <label for="choiceB-${this.uniqueId}">X is B</label>
+        <span></span>
+        
+        <button>B<audio src="${this.getAttribute('b')}" preload="auto"></audio></button>
+        
+
+        <input type="radio" id="choiceA-${this.uniqueId}" name="choice-${this.id}" value="A" />
+        <label for="choiceA-${this.uniqueId}">X is A</label>
+        <button>X<audio src="${this.getAttribute('x')}" preload="auto"></audio></button>
+        <input type="radio" id="choiceB-${this.uniqueId}" name="choice-${this.id}" value="B" />
+        <label for="choiceB-${this.uniqueId}">X is B</label>
+    </div>
     <link rel="stylesheet" href="css/xabx.css">
         `
     }

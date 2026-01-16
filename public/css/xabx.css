@@ -1,7 +1,9 @@
 :host {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 1em;
+    #controls {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1em;
+    }
 
     button {
         width: 50px;

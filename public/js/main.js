@@ -187,6 +187,7 @@ saveBtn.addEventListener('click', (e) => {
         age: document.querySelector('#age-input').value,
         isMusician: document.querySelector('input[type="radio"][name="isMusician"]:checked').value,
         instrument: document.querySelector('#instrument-input').value,
+        isMaker: document.querySelector('input[type="radio"][name="isMaker"]:checked').value,
     }
 
     let results = []
