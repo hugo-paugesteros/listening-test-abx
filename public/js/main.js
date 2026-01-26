@@ -131,7 +131,7 @@ function updatePage(pageIndex) {
 
     // Update prev/next buttons
     prevBtn.disabled = (pageIndex === 1)
-    // validateCurrentStep()
+    validateCurrentStep()
 
     Array.from(stepsContainer.children).forEach((li, idx) => {
         if (idx + 1 === pageIndex) li.classList.add('active')
